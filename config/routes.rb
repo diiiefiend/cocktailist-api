@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   use_doorkeeper
   root to: 'main#root'
 
-  get '/auth/facebook/callback', to: 'api/sessions#facebook'
-
   namespace :api, defaults: {format: :json} do
     get "/search", to: "static#search"
 
