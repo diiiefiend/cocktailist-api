@@ -8,6 +8,7 @@ bar_id      | integer   | not null, foreign key (references bars)
 name        | string    | not null
 liquor      | string    | not null
 ingredients | string    | not null
+avg_ratig   | float     |
 
 ## feeds
 column name | data type | details
@@ -24,6 +25,8 @@ column name | data type | details
 id          | integer   | not null, primary key
 name        | string    | not null
 address     | string    | not null
+longitude   | float     | 
+latitude    | float     |
 
 ## ratings
 column name | data type | details
@@ -34,6 +37,8 @@ cocktail_id | integer   | not null, foreign key (references cocktails)
 rating      | integer   | not null
 body        | string    | 
 date        | date      | (from timestamps)
+scale_composition | integer |
+scale_spirited    | integer |
 
 ## lists
 column name | data type | details

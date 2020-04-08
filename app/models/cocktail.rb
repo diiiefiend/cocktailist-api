@@ -2,6 +2,7 @@
 # t.string  "liquor",      null: false
 # t.string  "ingredients", null: false
 # t.integer "bar_id"
+# t.float "avg_rating"
 
 class Cocktail < ApplicationRecord
   include PgSearch
